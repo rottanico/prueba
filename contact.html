@@ -91,8 +91,7 @@
 									<h3 class="contact__title">call us</h3>
 									<div class="contact__text">+54 2995187151</div>
 								</div><!-- End / contact -->
-								
-								
+							
 								<!-- contact -->
 								<div class="contact">
 									<div class="contact__icon"><i class="pe-7s-voicemail"></i></div>
@@ -101,40 +100,41 @@
 								</div><!-- End / contact -->
 								
 							</div>
-							<div class="col-md-7 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
-								<div class="form-wrapper">
+							<div action=""  class="col-md-7 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-1 ">
+								<form id="form" class="form-wrapper">
 									
 									<!-- form-item -->
 									<div class="form-item form-item--half">
-										<input class="form-control" type="text" name="input" placeholder="Your name"/>
+										<input required class="form-control" type="text" name="Name" placeholder="Your name"/>
 									</div><!-- End / form-item -->
 									
 									
 									<!-- form-item -->
 									<div class="form-item form-item--half">
-										<input class="form-control" type="text" name="input" placeholder="Your emai"/>
+										<input class="form-control" required type="text" name="Email" placeholder="Your emai"/>
 									</div><!-- End / form-item -->
 									
 									
 									<!-- form-item -->
 									<div class="form-item">
-										<input class="form-control" type="text" name="input" placeholder="Subject"/>
+										<input class="form-control" required type="text" name="Subject" placeholder="Subject"/>
 									</div><!-- End / form-item -->
 									
 									
 									<!-- form-item -->
 									<div class="form-item">
-										<textarea class="form-control" placeholder="Your message" style="min-height:200px;"></textarea>
+										<textarea class="form-control" required name="text" placeholder="Your message" style="min-height:200px;"></textarea>
 									</div><!-- End / form-item -->
 									
 									
 									<!-- form-item -->
 									<div class="form-item">
-										<a class="md-btn md-btn--primary md-btn--lg " href="#">Send message
-										</a>
+										<button type="submit" class="md-btn md-btn--primary md-btn--lg " >Send message
+										</button>
 									</div><!-- End / form-item -->
 									
-								</div>
+								</form>
+								<a href='' id="mailto" style="opacity:0;"></a>
 							</div>
 						</div>
 					</div>
@@ -177,6 +177,7 @@
 			
 		</div>
 		<!-- Vendors-->
+		
 		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
 		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
